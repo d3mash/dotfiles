@@ -1,0 +1,6 @@
+alias top='htop'
+alias ll='ls -alF'
+alias l='ls -a'
+alias ls='ls -F'
+alias be='bundle exec'
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
