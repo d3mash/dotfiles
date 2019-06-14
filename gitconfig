@@ -8,7 +8,7 @@
     compactionHeuristic = true
     algorithm = patience
 [core]
-    editor = nvim
+    editor = emacs
     excludesfile = ~/.gitignore_global
     commentchar = $
 [pretty]
