@@ -1,0 +1,50 @@
+[user]
+    name = Demid Kashirin
+    email = demid.kashirin@gmail.com
+[push]
+    default = tracking
+[diff]
+    compactionHeuristic = true
+    algorithm = patience
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore_global
+    commentchar = $
+[pretty]
+	compact = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s|"
+	author  = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s| %C(green)%<(20,trunc)%an%C(reset) |"
+	graph = "\t%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) %s (%C(green)%an%C(reset)) %C(auto)%d"
+[alias]
+    co = checkout
+    ci = commit
+    ca = commit --amend
+    pf = push --force-with-lease
+    st = status
+    br = branch
+    ai = add --intent-to-add
+    mff = merge --ff-only
+    sdiff = diff --staged
+
+    l  = log --pretty=compact
+    ls = log --pretty=compact --no-merges
+    la = log --pretty=author
+    lg = log --pretty=graph --graph --branches --remotes --tags
+    lm = log --pretty=author master..
+
+    log-base-forward = "!f() { \
+        base=`git merge-base $1 HEAD`; \
+        git log $base..$1 $@; \
+    }; f"
+
+    ignore = update-index --assume-unchanged
+    unignore = update-index --no-assume-unchanged
+    ignored = !git ls-files -v | grep '^h'
+[log]
+	date = format:"%d-%b-%y %H:%M"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = osxkeychain

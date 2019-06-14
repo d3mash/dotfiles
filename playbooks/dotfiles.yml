@@ -1,3 +1,17 @@
+- name: ruby configs
+  file: src={{ playbook_dir }}/{{ item }} dest=~/.{{ item }} state=link force=yes
+  with_items:
+    - pryrc
+  tags: ruby
+
+- name: .gitconfig
+  file: src={{ playbook_dir }}/gitconfig dest=~/.gitconfig state=link force=yes
+  tags: git
+  
+- name: .gitignore_global
+  file: src={{ playbook_dir }}/gitignore dest=~/.gitignore_global state=link force=yes
+  tags: git
+
 - name: .bash_profile
   blockinfile:
     dest: ~/.bash_profile
@@ -6,9 +20,10 @@
     create: yes
     backup: yes
     content: |
-      export EDITOR=nvim
-      export PS1='$(__git_ps1) \W λ '
-      alias vi='nvim'
+      export EDITOR=emacs
+      source ~/.git_prompt.sh
+      export PS1='\u @ \W$(__git_ps1 " (%s)") λ '
+      alias em='emacs'
       function jcurl() {
         curl "$@" | json | pygmentize -l igor
       }
