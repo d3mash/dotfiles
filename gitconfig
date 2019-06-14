@@ -11,6 +11,8 @@
     editor = emacs
     excludesfile = ~/.gitignore_global
     commentchar = $
+[commit]
+    gpgsign = true
 [pretty]
 	compact = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s|"
 	author  = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s| %C(green)%<(20,trunc)%an%C(reset) |"
