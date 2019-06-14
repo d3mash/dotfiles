@@ -1,6 +1,7 @@
 [user]
     name = Demid Kashirin
     email = demid.kashirin@gmail.com
+    signingkey = CB952A398503BEB4
 [push]
     default = tracking
 [diff]
@@ -41,6 +42,8 @@
     ignored = !git ls-files -v | grep '^h'
 [log]
 	date = format:"%d-%b-%y %H:%M"
+[gpg]
+	program = gpg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
