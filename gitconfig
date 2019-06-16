@@ -12,9 +12,11 @@
     excludesfile = ~/.gitignore_global
     commentchar = $
 [pretty]
-	compact = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s|"
-	author  = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s| %C(green)%<(20,trunc)%an%C(reset) |"
-	graph = "\t%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) %s (%C(green)%an%C(reset)) %C(auto)%d"
+  	compact = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s|"
+	  author  = "%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) | %<(50,trunc)%s| %C(green)%<(20,trunc)%an%C(reset) |"
+	  graph = "\t%C(blue)%<(15)%ad%C(reset) %C(yellow)%h%C(reset) %s (%C(green)%an%C(reset)) %C(auto)%d"
+[commit]
+    gpgsign = true
 [alias]
     co = checkout
     ci = commit
@@ -41,13 +43,13 @@
     unignore = update-index --no-assume-unchanged
     ignored = !git ls-files -v | grep '^h'
 [log]
-	date = format:"%d-%b-%y %H:%M"
+    date = format:"%d-%b-%y %H:%M"
 [gpg]
-	program = gpg
+	  program = gpg
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+	  clean = git-lfs clean -- %f
+	  smudge = git-lfs smudge -- %f
+	  process = git-lfs filter-process
+	  required = true
 [credential]
-	helper = osxkeychain
+	  helper = osxkeychain
