@@ -107,7 +107,8 @@
    ))
 
 (defun dotspacemacs/user-init ()
-  )
+  (setq ruby-insert-encoding-magic-comment nil)
+ )
 
 (defun dotspacemacs/user-config ()
   (setq create-lockfiles nil)
