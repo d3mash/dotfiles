@@ -2,6 +2,7 @@
   file: src={{ playbook_dir }}/{{ item }} dest=~/.{{ item }} state=link force=yes
   with_items:
     - pryrc
+    - rubocop.yml
   tags: ruby
 
 - name: .gitconfig

@@ -1,0 +1,23 @@
+AllCops:
+  UseCache: false
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  TargetRubyVersion: 2.6
+  Exclude:
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'Vagrantfile'
+
+Naming/FileName:
+  Exclude:
+    - Capfile
+    - Guardfile
+    - Rakefile
+    - Vagrantfile
+
+Style/Documentation:
+  Enabled: false
+
+Style/LambdaCall:
+  Enabled: false
