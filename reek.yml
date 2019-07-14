@@ -1,0 +1,11 @@
+detectors:
+  IrresponsibleModule:
+    enabled:false
+  UtilityFunction:
+    public_methods_only: true
+directories:
+  'app/helpers':
+    UtilityFunction:
+      enabled: false
+    FeatureEnvy:
+      enabled: false
