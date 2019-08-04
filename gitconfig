@@ -53,3 +53,5 @@
 	  required = true
 [credential]
 	  helper = osxkeychain
+[github]
+	user = d3mash
