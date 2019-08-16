@@ -14,6 +14,7 @@ source ~/.git_prompt.sh
 export PS1='\u @ \W$(__git_ps1 " (%s)") λ '
 alias em='emacs'
 alias be='bundle exec'
+alias please='sudo'
 function jcurl() {
   curl "$@" | json | pygmentize -l igor
 }
