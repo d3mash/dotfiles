@@ -19,6 +19,12 @@
     - functions
   tags: bash
 
+- name: clojure
+  file: src={{ playbook_dir }}/{{ item }} dest ~/.{{ item }} state=link force=yes
+  with_items:
+    - profiles.clj
+  tags: clojure
+
 - name: .spacemacs
   file: src={{ playbook_dir }}/spacemacs dest=~/.spacemacs state=link force=yes
   tags: spacemacs
