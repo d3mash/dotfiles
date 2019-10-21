@@ -22,7 +22,8 @@
      javascript
      html
      yaml
-     ruby
+     (ruby :variables
+           ruby-version-manager 'rvm)
      helm
      auto-completion
      ;; better-defaults
@@ -32,8 +33,8 @@
                markdown-live-preview-engine 'vmd)
      org
      (shell :variables
-      shell-default-height 30
-     shell-default-position 'bottom)
+            shell-default-height 30
+            shell-default-position 'bottom)
      spell-checking
      syntax-checking
      )
