@@ -60,7 +60,7 @@
                          spacemacs-dark)
    dotspacemacs-colorize-cursor-according-to-state t
    dotspacemacs-default-font '("Menlo"
-                               :size 16
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -115,6 +115,7 @@
 
 (defun dotspacemacs/user-config ()
   (setq create-lockfiles nil)
+  (setq zone-timer (run-with-idle-timer 15 t 'zone))
   (define-key evil-insert-state-map (kbd "C-t") 'evil-normal-state)
   (define-key evil-insert-state-map (kbd "C-n") 'evil-lisp-state)
   )
