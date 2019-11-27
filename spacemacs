@@ -111,6 +111,7 @@
 
 (defun dotspacemacs/user-init ()
   (setq ruby-insert-encoding-magic-comment nil)
+  (global-font-lock-mode 0)
  )
 
 (defun dotspacemacs/user-config ()
