@@ -7,6 +7,7 @@ export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/mariadb@10.2/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 PATH=$PATH:$HOME/.gem/bin
 
 export EDITOR=emacs
