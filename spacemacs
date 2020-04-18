@@ -22,6 +22,7 @@
      javascript
      html
      yaml
+     (c-c++ :variables =c-c++-backend= 'lsp-clangd)
      (ruby :variables
            ruby-version-manager 'rvm)
      helm
@@ -93,7 +94,7 @@
    dotspacemacs-fullscreen-use-non-native nil
    dotspacemacs-maximized-at-startup 1
    dotspacemacs-active-transparency 90
-   dotspacemacs-inactive-transparency 90
+   dotspacemacs-inactive-transparency 80
    dotspacemacs-show-transient-state-title t
    dotspacemacs-show-transient-state-color-guide t
    dotspacemacs-mode-line-unicode-symbols t
