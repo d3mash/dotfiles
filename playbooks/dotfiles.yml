@@ -28,3 +28,7 @@
 - name: .spacemacs
   file: src={{ playbook_dir }}/spacemacs dest=~/.spacemacs state=link force=yes
   tags: spacemacs
+
+- name: zshconfig
+  file: src={{ playbook_dir }}/zshrc dest=~/.zshrc state=link force=yes
+  tags: zshrc
