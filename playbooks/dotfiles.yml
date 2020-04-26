@@ -11,7 +11,7 @@
   tags: git
 
 - name: clojure
-  file: src={{ playbook_dir }}/profiles.clj dest ~/.profiles.clj state=link force=yes
+  file: src={{ playbook_dir }}/profiles.clj dest=~/.profiles.clj state=link force=yes
   tags: clojure
 
 - name: bash configs
