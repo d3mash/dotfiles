@@ -10,6 +10,10 @@
   file: src={{ playbook_dir }}/gitconfig dest=~/.gitconfig state=link force=yes
   tags: git
 
+- name: clojure
+  file: src={{ playbook_dir }}/profiles.clj dest ~/.profiles.clj state=link force=yes
+  tags: clojure
+
 - name: bash configs
   file: src={{ playbook_dir }}/{{ item }} dest=~/.{{ item }} state=link force=yes
   with_items:
@@ -18,12 +22,6 @@
     - env
     - functions
   tags: bash
-
-- name: clojure
-  file: src={{ playbook_dir }}/{{ item }} dest ~/.{{ item }} state=link force=yes
-  with_items:
-    - profiles.clj
-  tags: clojure
 
 - name: .spacemacs
   file: src={{ playbook_dir }}/spacemacs dest=~/.spacemacs state=link force=yes
