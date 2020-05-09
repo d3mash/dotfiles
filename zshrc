@@ -96,6 +96,7 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="bundle exec"
 alias cat="bat"
 alias top="htop"
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 export BAT_THEME="GitHub"
 export PATH="$PATH:$HOME/.rvm/bin"
