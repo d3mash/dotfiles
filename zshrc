@@ -100,3 +100,4 @@ alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 export BAT_THEME="GitHub"
 export PATH="$PATH:$HOME/.rvm/bin"
+export LSCOLORS=exfxcxdxbxegedabagacad
