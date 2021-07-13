@@ -92,7 +92,7 @@ fi
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias be="bundle exec"
+alias be="foreman run bundle exec"
 alias cat="bat"
 alias top="htop"
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
@@ -102,3 +102,10 @@ export BAT_THEME="GitHub"
 export PATH="$PATH:$HOME/.rvm/bin"
 export LSCOLORS=exfxcxdxbxegedabagacad
 export PATH="/usr/local/sbin:$PATH"
+export WEBPACK_RUN_METHOD=docker
+export PATH="$HOME/.gem/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
