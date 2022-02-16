@@ -97,8 +97,12 @@ alias cat="bat"
 alias top="htop"
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias gitdab="git br | grep -v master | xargs git br -D"
+alias sshb="ssh -J swcb"
+alias deploy-host='ssh -A ubuntu@54.78.39.181'
 
 export BAT_THEME="GitHub"
 export PATH="$PATH:$HOME/.rvm/bin"
 export LSCOLORS=exfxcxdxbxegedabagacad
 export PATH="/usr/local/sbin:$PATH"
+
+alias sshb="ssh -J swcb"
