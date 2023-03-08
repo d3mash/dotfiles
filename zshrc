@@ -105,6 +105,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export LSCOLORS=exfxcxdxbxegedabagacad
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin/:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
+alias ibrew="arch -x86_64 brew"
+export PATH="$PATH:$HOME/.config/emacs/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 alias sshb="ssh -J swcb"
