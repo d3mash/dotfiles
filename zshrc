@@ -110,3 +110,5 @@ export PATH="$PATH:$HOME/.config/emacs/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 alias sshb="ssh -J swcb"
+export RUBY_YJIT_ENABLE=1
+export RUBY_CONFIGURE_OPTS=--enable-yjit

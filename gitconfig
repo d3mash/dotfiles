@@ -4,6 +4,7 @@
     signingkey = CB952A398503BEB4
 [push]
     default = tracking
+	autoSetupRemote = true
 [diff]
     compactionHeuristic = true
     algorithm = patience
